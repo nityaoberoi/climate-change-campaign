@@ -134,17 +134,48 @@ a.pure-button-primary {
  * This is the blue top section that appears on the page.
  */
 
-.splash-container {
-    background: url('/img/solarpanels.jpg') no-repeat center center fixed;
-    background-size: cover;
-    z-index: 1;
-    overflow: hidden;
-    /* The following styles are required for the "scroll-over" effect */
+ .swiper-container {
     width: 100%;
     height: 88%;
     top: 0;
     left: 0;
-    position: fixed !important;
+    position: absolute;
+    overflow: hidden;
+    background-size: cover;
+    margin-top: 61px;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+      font-size: 18px;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+}
+
+.swiper-slide-1 {
+    background-image: url('/img/solarpanels.jpg');
+}
+
+.swiper-slide-2 {
+    background-image: url('/img/windmills.jpg');
+}
+
+.swiper-slide-3 {
+    background-image: url('/img/solarpanels.jpg');
 }
 
 .splash {
@@ -155,11 +186,12 @@ a.pure-button-primary {
     position: absolute;
     top: 100px; left: 0; bottom: 0; right: 0;
     text-align: center;
-    text-transform: uppercase;
+
 }
 
 /* This is the main heading that appears on the blue section */
 .splash-head {
+    text-transform: uppercase;
     font-size: 20px;
     font-weight: bold;
     color: white;
@@ -168,6 +200,7 @@ a.pure-button-primary {
     font-weight: 100;
     border-radius: 5px;
     line-height: 1em;
+    margin: 0 auto;
 }
 
 /* This is the subheading that appears on the blue section */
@@ -213,6 +246,7 @@ a.pure-button-primary {
 /* This is the class used for the content sub-headers (<h3>) */
 .content-subhead {
     color: #1f8dd6;
+    width: 200px;
 }
     .content-subhead i {
         margin-right: 7px;
